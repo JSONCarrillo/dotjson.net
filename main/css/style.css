@@ -1,0 +1,46 @@
+/*
+* Macchiato Theme
+* Crust: #181926
+* Mantle: #1e2030
+* Base: #24273a
+* Text: #cad3f5
+* Lavender: #b7bdf8
+* Blue: #8aadf4
+* Sapphire: 7dc4e4
+* Sky: #91d7e3
+* Teal: 8bd5ca
+* Green: #a6da95
+* Yellow: #ee49f
+* Peach: #f5a97f
+* Maroon: #ee99a0
+* Red: #ed8796
+* Mauve: #c6a0f6
+* Pink: #f5a97f
+* Flamingo: #f0c6c6
+* Rosewater: #f4dbd6
+* */
+
+@font-face {
+  font-family: "frutiger";
+  src: url("../media/font/FrutigerLTStd-Roman.otf");
+  src: url("../media/font/FrutigerLTStd-Bold.otf"), bold;
+  src: url("../media/font/FrutigerLTStd-Black.otf"), black;
+  src: url("../media/font/FrutigerLTStd-Light.otf"), light;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  background-color: #181926;
+  font-family: "frutiger";
+  
+}
+
+.title > h1 {
+  color: #91d7e3;
+  font-size: 12pt;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 500px) {
+}
