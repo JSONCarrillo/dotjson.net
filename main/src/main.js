@@ -6,21 +6,30 @@ const titletron = async () => {
   let title = document.querySelector("title");
   let index = 0;
   let deleted_letters = "";
-  title.innerText = text;
+  title.innerText = "";
+  
+  // Initial write out  of the text
+  for (index = 0; index < text.length; index++) {
+    title.innerText += text[index];
+    await delay(100)
+  }
 
+  // Wait 1 second
   await delay(1000);
-
+  
+  // Loop for the scrolling title
   while (true) {
     if (index == text.length) {
       index = 0;
       deleted_letters = "";
     }
+    // Adds deleted letters to this string
     deleted_letters += text[index];
 
-    // Display all text
-    displayed_text = text.slice(index, text.length) + deleted_letters;
-
-    title.innerText = displayed_text;
+    // Appends deleted letters to the back of the text line
+    title.innerText = text.slice(index, text.length) + deleted_letters;
+    
+    // wait 1/4 second and increase index
     await delay(250);
     index++;
   }
